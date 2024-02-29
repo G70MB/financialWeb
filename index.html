@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>financialWeb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.google    apis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div id="divo">
+        <div id="nav">
+            <div class="logo  ">FinanceWeb</div>
+            <ul id="navinflex">
+                
+            
+            <li class="navtext z"><span >Loan</span></li>
+            <li class="navtext z"><span >Investiment</span></li>
+            <li class="navtext z"><span >currency</span></li>
+            
+                
+            </ul>
+            <div id="nl" class="navlogin z"><span class="navtext" onclick="scrollToDiv()" style="cursor: pointer;">Login</span></div>
+            <div class="togele_btn z"><i class="fa-solid fa-bars"></i></div>
+            
+            
+        </div>
+        <div id="xx" class="navmenu ">
+            <ul id="navinmenuflex">
+                
+                <li class="navtext q"><span >Loan</span></li>
+                <li class="navtext q"><span >Investiment</span></li>
+                <li class="navtext q"><span >currency</span></li>
+                
+                    
+                </ul>
+        </div>
+        <div class="backgroundo">
+            <div class="shapeo"></div>
+            <div class="shapeo"></div>
+        </div>
+        <div id="belownav">
+            <div id="imagebox">
+                <p style="color: white;">Description of the project</p>
+    
+            </div>
+            <div id="information" class="mahesh">
+                <p style="color: white;">place u r video r image</p>
+            </div>
+            
+        </div>
+
+    </div>
+    <div id="divt">
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape " id="one"> 
+                <h1>Admin</h1>
+            </div>
+            <div class="shape " id="two">
+                <h1>Customer</h1>
+            </div>
+            <div class="shape " id="three">
+                <h1>Staff</h1>
+            </div>
+        </div>
+        <div id="mahesht" class="mahesht" >
+            <img src="./497_SkVNQSBHRVIgNzc5LTA2.jpg" alt="" id="imgt">
+        </div>
+    <form id="Customer" class="cetogery">
+        <h3>Customer Login.</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button>Log In</button>
+        <p id="para">Don't have an account? <span id="cya">Creat Your Account</span> it takes less than a minute</p>
+    </form>
+    <form id="Admin" class="cetogery">
+        <h3>Admin Login.</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button>Log In</button>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+    </form>
+    <form id="Staff" class="cetogery">
+        <h3>Staff Login.</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button>Log In</button>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+    </form>
+    <form id="reg">
+        <h3>Registration Form.</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Name" id="name">
+        <label for="dob">DOB</label>
+        <input type="date" placeholder="dd-mm-yyyy" id="dob">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">    
+        <button>register</button>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+    </form>    
+    </div>
+    
+
+    <script>
+        document.getElementById("one").addEventListener("click",function(){
+            document.querySelector("#Admin").style.display = "block";
+            document.querySelector("#Staff").style.display = "none";
+            document.querySelector("#Customer").style.display = "none";
+            document.querySelector("#reg").style.display = "none";
+
+
+        })
+        document.getElementById("three").addEventListener("click",function(){
+            document.querySelector("#Admin").style.display = "none";
+            document.querySelector("#Staff").style.display = "block";
+            document.querySelector("#Customer").style.display = "none";
+            document.querySelector("#reg").style.display = "none";
+
+
+        })
+        document.getElementById("two").addEventListener("click",function(){
+            document.querySelector("#Admin").style.display = "none";
+            document.querySelector("#Staff").style.display = "none";
+            document.querySelector("#Customer").style.display = "block";
+            document.querySelector("#reg").style.display = "none";
+        })
+        document.getElementById("cya").addEventListener("click",function(){
+            document.querySelector("#Admin").style.display = "none";
+            document.querySelector("#Staff").style.display = "none";
+            document.querySelector("#Customer").style.display = "none";
+            document.querySelector("#reg").style.display = "block";
+        })
+        function scrollToDiv() {
+    var target = document.getElementById("divt");
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+    const butt = document.querySelector('.togele_btn');
+    const buttog = document.querySelector('.togele_btn i');
+    const drop = document.querySelector('.navmenu');
+
+    butt.onclick = function(){
+        drop.classList.toggle('ope');
+    }
+    </script>
+</body>
+</html>
